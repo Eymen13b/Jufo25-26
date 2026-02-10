@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeta – Unser Projekt</title>
+  <link rel="stylesheet" href="projekt.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Unser jetziges Jugend Forscht Projekt heißt: Selbstgemachter Kleber im Test</h1>
+    <p>Hier ist die Kurzzusamfassung unseres jetzigen JuFo Projekts:</p>
+
+    <!-- Projekt-Bild -->
+    <div class="bild-box">
+      <img src="IMG_1823.jpeg" alt="Unser Projekt">
+    </div>
+
+    <!-- E-Mail-Formular -->
+    <div class="email-form-container">
+      <form id="emailForm" action="https://formspree.io/f/mjkpqzlp" method="POST" class="email-form">
+        <label for="email">Trage deine E-Mail ein, um unsere komplette Arbeit zugeschickt zu bekommen:</label><br><br>
+        <input type="email" id="email" name="email" placeholder="deine@email.de" required>
+        <button type="submit">Bestätigen</button>
+        <p id="emailMessage"></p>
+      </form>
+    </div>
+
+    <!-- Zurück-Link -->
+    <div class="back-link">
+      <a href="index.html">Zurück zur Startseite</a>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('emailForm');
+    const emailInput = document.getElementById('email');
+    const message = document.getElementById('emailMessage');
+
+    form.addEventListener('submit', function(e) {
+      if(!emailInput.checkValidity()) {
+        e.preventDefault(); // Formular nicht abschicken
+        emailInput.style.borderColor = 'red';
+        message.style.color = 'red';
+        message.textContent = "Bitte gib eine gültige E-Mail-Adresse ein.";
+      } else {
+        emailInput.style.borderColor = 'green';
+        message.style.color = 'green';
+        message.textContent = "Danke! Deine E-Mail ist gültig.";
+      }
+    });
+  </script>
+</body>
+</html>

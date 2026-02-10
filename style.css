@@ -1,0 +1,78 @@
+body {
+    font-size: 25pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bilder img {
+    width: 300px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.bilder img:hover {
+    box-shadow: 0 0 25px 5px black;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.projekte-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.projekte-link a {
+    color: black;
+    font-size: 20pt;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.projekte-link a:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 15px black;
+}
+
+.projekt-link a {
+    color: black;
+    font-size: 20pt;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 43px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.projekt-link a:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 15px black;
+}
+
+.projekt-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.team-link a {
+    color: black;
+    font-size: 20pt;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 60px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.team-link a:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 15px black;
+}
+.team-link {
+  text-align: center;
+  margin-top: 30px;
+}

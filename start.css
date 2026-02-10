@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Graffitti";
+  src: url("Bouncy-PERSONAL_USE_ONLY.otf") format("truetype");
+}
+
+.zumstart {
+  text-align: center;
+  font-size: 50px;
+  color: red;
+  margin-top: 50px;
+  font-family: "Minecraft", sans-serif;
+}
+
+.zumstart a {
+  text-decoration: none;
+  color: red;
+  transition: all 0.3s ease;
+  font-family: 'Graffitti', cursive;
+  /* Neue Schrift nur für den Link */
+}
+
+.zumstart a:hover {
+  color: darkred;
+  text-shadow: 0 0 20px red;
+}
+
+/* Bild darunter */
+.bild-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.bild-container img {
+  width: 80%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.bild-container img:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
